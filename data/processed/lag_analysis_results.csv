@@ -1,0 +1,221 @@
+topic,event,event_date,lag_days,correlation,p_value,significant,interpretation,severity
+COVID-19_pandemic,WHO declares pandemic,2020-03-11,-5,0.36485546603266233,0.04357848942004749,True,Edits spike 5 days BEFORE event (anticipation),high
+COVID-19_pandemic,WHO declares pandemic,2020-03-11,-4,0.2890091531314808,0.1086511273121156,False,Not significant,high
+COVID-19_pandemic,WHO declares pandemic,2020-03-11,-3,0.45521994067136756,0.007769776689192037,True,Edits spike 3 days BEFORE event (anticipation),high
+COVID-19_pandemic,WHO declares pandemic,2020-03-11,-2,0.24822163447490453,0.15692323498371785,False,Not significant,high
+COVID-19_pandemic,WHO declares pandemic,2020-03-11,-1,0.12127961632527734,0.48767550821174377,False,Not significant,high
+COVID-19_pandemic,WHO declares pandemic,2020-03-11,0,0.17679398896195683,0.3023152655369425,False,Not significant,high
+COVID-19_pandemic,WHO declares pandemic,2020-03-11,1,0.12127961632527734,0.48767550821174377,False,Not significant,high
+COVID-19_pandemic,WHO declares pandemic,2020-03-11,2,0.24822163447490453,0.15692323498371785,False,Not significant,high
+COVID-19_pandemic,WHO declares pandemic,2020-03-11,3,0.45521994067136756,0.007769776689192037,True,Edits spike 3 days AFTER event (reaction),high
+COVID-19_pandemic,WHO declares pandemic,2020-03-11,4,0.2890091531314808,0.1086511273121156,False,Not significant,high
+COVID-19_pandemic,WHO declares pandemic,2020-03-11,5,0.36485546603266233,0.04357848942004749,True,Edits spike 5 days AFTER event (reaction),high
+COVID-19_pandemic,WHO declares emergency,2020-01-30,-5,0.009187779484477016,0.9644696700822772,False,Not significant,medium
+COVID-19_pandemic,WHO declares emergency,2020-01-30,-4,0.1116501391217246,0.5792794240174263,False,Not significant,medium
+COVID-19_pandemic,WHO declares emergency,2020-01-30,-3,0.01564528525898912,0.9370188975575344,False,Not significant,medium
+COVID-19_pandemic,WHO declares emergency,2020-01-30,-2,0.04572187381729554,0.8138111898438005,False,Not significant,medium
+COVID-19_pandemic,WHO declares emergency,2020-01-30,-1,0.06400217732315801,0.7368682183192954,False,Not significant,medium
+COVID-19_pandemic,WHO declares emergency,2020-01-30,0,0.06513483162849734,0.7277482976619376,False,Not significant,medium
+COVID-19_pandemic,WHO declares emergency,2020-01-30,1,0.06400217732315801,0.7368682183192954,False,Not significant,medium
+COVID-19_pandemic,WHO declares emergency,2020-01-30,2,0.04572187381729554,0.8138111898438005,False,Not significant,medium
+COVID-19_pandemic,WHO declares emergency,2020-01-30,3,0.01564528525898912,0.9370188975575344,False,Not significant,medium
+COVID-19_pandemic,WHO declares emergency,2020-01-30,4,0.1116501391217246,0.5792794240174263,False,Not significant,medium
+COVID-19_pandemic,WHO declares emergency,2020-01-30,5,0.009187779484477016,0.9644696700822772,False,Not significant,medium
+COVID-19_pandemic,First vaccine authorized,2020-12-11,-5,-0.3075830394573968,0.09232483486399042,False,Not significant,medium
+COVID-19_pandemic,First vaccine authorized,2020-12-11,-4,-0.06278662090775217,0.7328168535133798,False,Not significant,medium
+COVID-19_pandemic,First vaccine authorized,2020-12-11,-3,-0.2690137934244852,0.13006555806383718,False,Not significant,medium
+COVID-19_pandemic,First vaccine authorized,2020-12-11,-2,-0.1508747163479546,0.394365060739903,False,Not significant,medium
+COVID-19_pandemic,First vaccine authorized,2020-12-11,-1,-0.2712765834251628,0.11494957350891075,False,Not significant,medium
+COVID-19_pandemic,First vaccine authorized,2020-12-11,0,-0.1545616283862517,0.36808471697172873,False,Not significant,medium
+COVID-19_pandemic,First vaccine authorized,2020-12-11,1,-0.2712765834251628,0.11494957350891075,False,Not significant,medium
+COVID-19_pandemic,First vaccine authorized,2020-12-11,2,-0.1508747163479546,0.394365060739903,False,Not significant,medium
+COVID-19_pandemic,First vaccine authorized,2020-12-11,3,-0.2690137934244852,0.13006555806383718,False,Not significant,medium
+COVID-19_pandemic,First vaccine authorized,2020-12-11,4,-0.06278662090775217,0.7328168535133798,False,Not significant,medium
+COVID-19_pandemic,First vaccine authorized,2020-12-11,5,-0.3075830394573968,0.09232483486399042,False,Not significant,medium
+Taylor_Swift,Album Midnights released,2022-10-21,-5,-0.09270266949669302,0.6524096178477927,False,Not significant,high
+Taylor_Swift,Album Midnights released,2022-10-21,-4,0.28800772021238463,0.14517337923462992,False,Not significant,high
+Taylor_Swift,Album Midnights released,2022-10-21,-3,-0.09877295966495896,0.6170370414698259,False,Not significant,high
+Taylor_Swift,Album Midnights released,2022-10-21,-2,-0.0874547618046239,0.6519115831962669,False,Not significant,high
+Taylor_Swift,Album Midnights released,2022-10-21,-1,0.11875328184294162,0.5319590644496054,False,Not significant,high
+Taylor_Swift,Album Midnights released,2022-10-21,0,0.10835143103385683,0.5617820662453656,False,Not significant,high
+Taylor_Swift,Album Midnights released,2022-10-21,1,0.11875328184294162,0.5319590644496054,False,Not significant,high
+Taylor_Swift,Album Midnights released,2022-10-21,2,-0.0874547618046239,0.6519115831962669,False,Not significant,high
+Taylor_Swift,Album Midnights released,2022-10-21,3,-0.09877295966495896,0.6170370414698259,False,Not significant,high
+Taylor_Swift,Album Midnights released,2022-10-21,4,0.28800772021238463,0.14517337923462992,False,Not significant,high
+Taylor_Swift,Album Midnights released,2022-10-21,5,-0.09270266949669302,0.6524096178477927,False,Not significant,high
+Taylor_Swift,Eras Tour begins,2023-03-17,-5,,,False,Negative correlation (edits decrease around event),high
+Taylor_Swift,Eras Tour begins,2023-03-17,-4,0.11254182622741828,0.584121647907674,False,Not significant,high
+Taylor_Swift,Eras Tour begins,2023-03-17,-3,-0.033308669376324554,0.8689970571725775,False,Not significant,high
+Taylor_Swift,Eras Tour begins,2023-03-17,-2,0.06932076430756061,0.7259564624211483,False,Not significant,high
+Taylor_Swift,Eras Tour begins,2023-03-17,-1,0.0031267715247774775,0.9871565980916308,False,Not significant,high
+Taylor_Swift,Eras Tour begins,2023-03-17,0,0.27488683910913064,0.14152560184416368,False,Not significant,high
+Taylor_Swift,Eras Tour begins,2023-03-17,1,0.0031267715247774775,0.9871565980916308,False,Not significant,high
+Taylor_Swift,Eras Tour begins,2023-03-17,2,0.06932076430756061,0.7259564624211483,False,Not significant,high
+Taylor_Swift,Eras Tour begins,2023-03-17,3,-0.033308669376324554,0.8689970571725775,False,Not significant,high
+Taylor_Swift,Eras Tour begins,2023-03-17,4,0.11254182622741828,0.584121647907674,False,Not significant,high
+Taylor_Swift,Eras Tour begins,2023-03-17,5,,,False,Negative correlation (edits decrease around event),high
+Taylor_Swift,Grammy win,2024-02-04,-5,0.12728409374884636,0.5186354836740302,False,Not significant,medium
+Taylor_Swift,Grammy win,2024-02-04,-4,-0.03656528169863159,0.8506326959396586,False,Not significant,medium
+Taylor_Swift,Grammy win,2024-02-04,-3,0.0667787162625083,0.72587942625121,False,Not significant,medium
+Taylor_Swift,Grammy win,2024-02-04,-2,0.2338299122691258,0.20549607994358252,False,Not significant,medium
+Taylor_Swift,Grammy win,2024-02-04,-1,0.908591980629686,6.668492802841591e-13,True,Edits spike 1 days BEFORE event (anticipation),medium
+Taylor_Swift,Grammy win,2024-02-04,0,-0.029980988501337263,0.8684529630016987,False,Not significant,medium
+Taylor_Swift,Grammy win,2024-02-04,1,0.908591980629686,6.668492802841591e-13,True,Edits spike 1 days AFTER event (reaction),medium
+Taylor_Swift,Grammy win,2024-02-04,2,0.2338299122691258,0.20549607994358252,False,Not significant,medium
+Taylor_Swift,Grammy win,2024-02-04,3,0.0667787162625083,0.72587942625121,False,Not significant,medium
+Taylor_Swift,Grammy win,2024-02-04,4,-0.03656528169863159,0.8506326959396586,False,Not significant,medium
+Taylor_Swift,Grammy win,2024-02-04,5,0.12728409374884636,0.5186354836740302,False,Not significant,medium
+Bitcoin,Coinbase IPO,2021-04-14,-5,,,False,Negative correlation (edits decrease around event),medium
+Bitcoin,Coinbase IPO,2021-04-14,-4,,,False,Negative correlation (edits decrease around event),medium
+Bitcoin,Coinbase IPO,2021-04-14,-3,0.7845877194088856,0.00019197929453591971,True,Edits spike 3 days BEFORE event (anticipation),medium
+Bitcoin,Coinbase IPO,2021-04-14,-2,0.026356340805554435,0.9173200718876682,False,Not significant,medium
+Bitcoin,Coinbase IPO,2021-04-14,-1,-0.15275570229717964,0.5324146008891649,False,Not significant,medium
+Bitcoin,Coinbase IPO,2021-04-14,0,-0.14935670118750316,0.5296922127413137,False,Not significant,medium
+Bitcoin,Coinbase IPO,2021-04-14,1,-0.15275570229717964,0.5324146008891649,False,Not significant,medium
+Bitcoin,Coinbase IPO,2021-04-14,2,0.026356340805554435,0.9173200718876682,False,Not significant,medium
+Bitcoin,Coinbase IPO,2021-04-14,3,0.7845877194088856,0.00019197929453591971,True,Edits spike 3 days AFTER event (reaction),medium
+Bitcoin,Coinbase IPO,2021-04-14,4,,,False,Negative correlation (edits decrease around event),medium
+Bitcoin,Coinbase IPO,2021-04-14,5,,,False,Negative correlation (edits decrease around event),medium
+Bitcoin,All-time high $69k,2021-11-10,-5,,,False,Negative correlation (edits decrease around event),high
+Bitcoin,All-time high $69k,2021-11-10,-4,,,False,Negative correlation (edits decrease around event),high
+Bitcoin,All-time high $69k,2021-11-10,-3,,,False,Negative correlation (edits decrease around event),high
+Bitcoin,All-time high $69k,2021-11-10,-2,,,False,Negative correlation (edits decrease around event),high
+Bitcoin,All-time high $69k,2021-11-10,-1,,,False,Negative correlation (edits decrease around event),high
+Bitcoin,All-time high $69k,2021-11-10,0,,,False,Negative correlation (edits decrease around event),high
+Bitcoin,All-time high $69k,2021-11-10,1,,,False,Negative correlation (edits decrease around event),high
+Bitcoin,All-time high $69k,2021-11-10,2,,,False,Negative correlation (edits decrease around event),high
+Bitcoin,All-time high $69k,2021-11-10,3,,,False,Negative correlation (edits decrease around event),high
+Bitcoin,All-time high $69k,2021-11-10,4,,,False,Negative correlation (edits decrease around event),high
+Bitcoin,All-time high $69k,2021-11-10,5,,,False,Negative correlation (edits decrease around event),high
+Bitcoin,FTX collapse,2022-11-11,-5,,,False,Negative correlation (edits decrease around event),high
+Bitcoin,FTX collapse,2022-11-11,-4,,,False,Negative correlation (edits decrease around event),high
+Bitcoin,FTX collapse,2022-11-11,-3,,,False,Negative correlation (edits decrease around event),high
+Bitcoin,FTX collapse,2022-11-11,-2,,,False,Negative correlation (edits decrease around event),high
+Bitcoin,FTX collapse,2022-11-11,-1,,,False,Negative correlation (edits decrease around event),high
+Bitcoin,FTX collapse,2022-11-11,0,,,False,Negative correlation (edits decrease around event),high
+Bitcoin,FTX collapse,2022-11-11,1,,,False,Negative correlation (edits decrease around event),high
+Bitcoin,FTX collapse,2022-11-11,2,,,False,Negative correlation (edits decrease around event),high
+Bitcoin,FTX collapse,2022-11-11,3,,,False,Negative correlation (edits decrease around event),high
+Bitcoin,FTX collapse,2022-11-11,4,,,False,Negative correlation (edits decrease around event),high
+Bitcoin,FTX collapse,2022-11-11,5,,,False,Negative correlation (edits decrease around event),high
+Ukraine,Russian invasion begins,2022-02-24,-5,0.09307756625182766,0.6963130835801654,False,Not significant,high
+Ukraine,Russian invasion begins,2022-02-24,-4,0.006520044632031621,0.9776229232673072,False,Not significant,high
+Ukraine,Russian invasion begins,2022-02-24,-3,0.015269495105603586,0.9462288162566808,False,Not significant,high
+Ukraine,Russian invasion begins,2022-02-24,-2,0.4862598051770691,0.018639211430971997,True,Edits spike 2 days BEFORE event (anticipation),high
+Ukraine,Russian invasion begins,2022-02-24,-1,0.3559226410455609,0.08782377399427899,False,Not significant,high
+Ukraine,Russian invasion begins,2022-02-24,0,0.5098186197762201,0.009230286737399397,True,Edits spike ON event day,high
+Ukraine,Russian invasion begins,2022-02-24,1,0.3559226410455609,0.08782377399427899,False,Not significant,high
+Ukraine,Russian invasion begins,2022-02-24,2,0.4862598051770691,0.018639211430971997,True,Edits spike 2 days AFTER event (reaction),high
+Ukraine,Russian invasion begins,2022-02-24,3,0.015269495105603586,0.9462288162566808,False,Not significant,high
+Ukraine,Russian invasion begins,2022-02-24,4,0.006520044632031621,0.9776229232673072,False,Not significant,high
+Ukraine,Russian invasion begins,2022-02-24,5,0.09307756625182766,0.6963130835801654,False,Not significant,high
+Ukraine,Mobilization announced,2022-09-21,-5,,,False,Negative correlation (edits decrease around event),medium
+Ukraine,Mobilization announced,2022-09-21,-4,-0.23269189086526004,0.44424754599126676,False,Not significant,medium
+Ukraine,Mobilization announced,2022-09-21,-3,0.5210501057189062,0.05605889215963733,False,Not significant,medium
+Ukraine,Mobilization announced,2022-09-21,-2,-0.21008772061349149,0.4523362850034645,False,Not significant,medium
+Ukraine,Mobilization announced,2022-09-21,-1,-0.07416569324833078,0.7848735090387904,False,Not significant,medium
+Ukraine,Mobilization announced,2022-09-21,0,0.054840849710708184,0.8344108799148616,False,Not significant,medium
+Ukraine,Mobilization announced,2022-09-21,1,-0.07416569324833078,0.7848735090387904,False,Not significant,medium
+Ukraine,Mobilization announced,2022-09-21,2,-0.21008772061349149,0.4523362850034645,False,Not significant,medium
+Ukraine,Mobilization announced,2022-09-21,3,0.5210501057189062,0.05605889215963733,False,Not significant,medium
+Ukraine,Mobilization announced,2022-09-21,4,-0.23269189086526004,0.44424754599126676,False,Not significant,medium
+Ukraine,Mobilization announced,2022-09-21,5,,,False,Negative correlation (edits decrease around event),medium
+Ukraine,Kakhovka dam destroyed,2023-06-06,-5,,,False,Negative correlation (edits decrease around event),medium
+Ukraine,Kakhovka dam destroyed,2023-06-06,-4,,,False,Negative correlation (edits decrease around event),medium
+Ukraine,Kakhovka dam destroyed,2023-06-06,-3,,,False,Negative correlation (edits decrease around event),medium
+Ukraine,Kakhovka dam destroyed,2023-06-06,-2,,,False,Negative correlation (edits decrease around event),medium
+Ukraine,Kakhovka dam destroyed,2023-06-06,-1,,,False,Negative correlation (edits decrease around event),medium
+Ukraine,Kakhovka dam destroyed,2023-06-06,0,,,False,Negative correlation (edits decrease around event),medium
+Ukraine,Kakhovka dam destroyed,2023-06-06,1,,,False,Negative correlation (edits decrease around event),medium
+Ukraine,Kakhovka dam destroyed,2023-06-06,2,,,False,Negative correlation (edits decrease around event),medium
+Ukraine,Kakhovka dam destroyed,2023-06-06,3,,,False,Negative correlation (edits decrease around event),medium
+Ukraine,Kakhovka dam destroyed,2023-06-06,4,,,False,Negative correlation (edits decrease around event),medium
+Ukraine,Kakhovka dam destroyed,2023-06-06,5,,,False,Negative correlation (edits decrease around event),medium
+ChatGPT,GPT-4 released,2023-03-14,-5,0.027910558674687957,0.8878837677610716,False,Not significant,high
+ChatGPT,GPT-4 released,2023-03-14,-4,-0.15248485885103613,0.4297205353785037,False,Not significant,high
+ChatGPT,GPT-4 released,2023-03-14,-3,0.223580921825834,0.23496128617078482,False,Not significant,high
+ChatGPT,GPT-4 released,2023-03-14,-2,-0.09211471421360252,0.6221207378063406,False,Not significant,high
+ChatGPT,GPT-4 released,2023-03-14,-1,0.22348060854961907,0.2188758149058826,False,Not significant,high
+ChatGPT,GPT-4 released,2023-03-14,0,-0.1864238564123799,0.29891081098447164,False,Not significant,high
+ChatGPT,GPT-4 released,2023-03-14,1,0.22348060854961907,0.2188758149058826,False,Not significant,high
+ChatGPT,GPT-4 released,2023-03-14,2,-0.09211471421360252,0.6221207378063406,False,Not significant,high
+ChatGPT,GPT-4 released,2023-03-14,3,0.223580921825834,0.23496128617078482,False,Not significant,high
+ChatGPT,GPT-4 released,2023-03-14,4,-0.15248485885103613,0.4297205353785037,False,Not significant,high
+ChatGPT,GPT-4 released,2023-03-14,5,0.027910558674687957,0.8878837677610716,False,Not significant,high
+ChatGPT,Multimodal features,2023-09-25,-5,,,False,Negative correlation (edits decrease around event),medium
+ChatGPT,Multimodal features,2023-09-25,-4,,,False,Negative correlation (edits decrease around event),medium
+ChatGPT,Multimodal features,2023-09-25,-3,0.8132500607904444,0.00012761279509481031,True,Edits spike 3 days BEFORE event (anticipation),medium
+ChatGPT,Multimodal features,2023-09-25,-2,0.12206826881567392,0.6407029936058906,False,Not significant,medium
+ChatGPT,Multimodal features,2023-09-25,-1,-0.0375359402740605,0.8824454586280426,False,Not significant,medium
+ChatGPT,Multimodal features,2023-09-25,0,0.13938889959715106,0.569271765011473,False,Not significant,medium
+ChatGPT,Multimodal features,2023-09-25,1,-0.0375359402740605,0.8824454586280426,False,Not significant,medium
+ChatGPT,Multimodal features,2023-09-25,2,0.12206826881567392,0.6407029936058906,False,Not significant,medium
+ChatGPT,Multimodal features,2023-09-25,3,0.8132500607904444,0.00012761279509481031,True,Edits spike 3 days AFTER event (reaction),medium
+ChatGPT,Multimodal features,2023-09-25,4,,,False,Negative correlation (edits decrease around event),medium
+ChatGPT,Multimodal features,2023-09-25,5,,,False,Negative correlation (edits decrease around event),medium
+2022_FIFA_World_Cup,Tournament starts,2022-11-20,-5,0.179106343277038,0.3525583359870445,False,Not significant,medium
+2022_FIFA_World_Cup,Tournament starts,2022-11-20,-4,0.20202292490062818,0.2843517392993311,False,Not significant,medium
+2022_FIFA_World_Cup,Tournament starts,2022-11-20,-3,0.16311345653332235,0.38062282953869053,False,Not significant,medium
+2022_FIFA_World_Cup,Tournament starts,2022-11-20,-2,0.2725350064472096,0.13127700233163775,False,Not significant,medium
+2022_FIFA_World_Cup,Tournament starts,2022-11-20,-1,0.26911082274898374,0.12992174774548704,False,Not significant,medium
+2022_FIFA_World_Cup,Tournament starts,2022-11-20,0,0.5889126120555739,0.0002482846763645429,True,Edits spike ON event day,medium
+2022_FIFA_World_Cup,Tournament starts,2022-11-20,1,0.26911082274898374,0.12992174774548704,False,Not significant,medium
+2022_FIFA_World_Cup,Tournament starts,2022-11-20,2,0.2725350064472096,0.13127700233163775,False,Not significant,medium
+2022_FIFA_World_Cup,Tournament starts,2022-11-20,3,0.16311345653332235,0.38062282953869053,False,Not significant,medium
+2022_FIFA_World_Cup,Tournament starts,2022-11-20,4,0.20202292490062818,0.2843517392993311,False,Not significant,medium
+2022_FIFA_World_Cup,Tournament starts,2022-11-20,5,0.179106343277038,0.3525583359870445,False,Not significant,medium
+2022_FIFA_World_Cup,Argentina wins final,2022-12-18,-5,-0.22544918597284408,0.22267757899532506,False,Not significant,high
+2022_FIFA_World_Cup,Argentina wins final,2022-12-18,-4,-0.15669438847411216,0.3917546655737191,False,Not significant,high
+2022_FIFA_World_Cup,Argentina wins final,2022-12-18,-3,-0.1193596993548196,0.508226012154626,False,Not significant,high
+2022_FIFA_World_Cup,Argentina wins final,2022-12-18,-2,-0.08114377727327768,0.6482451815350168,False,Not significant,high
+2022_FIFA_World_Cup,Argentina wins final,2022-12-18,-1,0.10621390807823211,0.5436710570726296,False,Not significant,high
+2022_FIFA_World_Cup,Argentina wins final,2022-12-18,0,0.33088802460467476,0.04870281928329219,True,Edits spike ON event day,high
+2022_FIFA_World_Cup,Argentina wins final,2022-12-18,1,0.10621390807823211,0.5436710570726296,False,Not significant,high
+2022_FIFA_World_Cup,Argentina wins final,2022-12-18,2,-0.08114377727327768,0.6482451815350168,False,Not significant,high
+2022_FIFA_World_Cup,Argentina wins final,2022-12-18,3,-0.1193596993548196,0.508226012154626,False,Not significant,high
+2022_FIFA_World_Cup,Argentina wins final,2022-12-18,4,-0.15669438847411216,0.3917546655737191,False,Not significant,high
+2022_FIFA_World_Cup,Argentina wins final,2022-12-18,5,-0.22544918597284408,0.22267757899532506,False,Not significant,high
+"Tesla,_Inc.",Added to S&P 500,2020-12-21,-5,,,False,Negative correlation (edits decrease around event),high
+"Tesla,_Inc.",Added to S&P 500,2020-12-21,-4,,,False,Negative correlation (edits decrease around event),high
+"Tesla,_Inc.",Added to S&P 500,2020-12-21,-3,-0.12178053674042241,0.5892828956934989,False,Not significant,high
+"Tesla,_Inc.",Added to S&P 500,2020-12-21,-2,-0.12985913115622497,0.5548140874536324,False,Not significant,high
+"Tesla,_Inc.",Added to S&P 500,2020-12-21,-1,-0.11217766891167102,0.6017602090089731,False,Not significant,high
+"Tesla,_Inc.",Added to S&P 500,2020-12-21,0,-0.08934795112453978,0.6710411153122743,False,Not significant,high
+"Tesla,_Inc.",Added to S&P 500,2020-12-21,1,-0.11217766891167102,0.6017602090089731,False,Not significant,high
+"Tesla,_Inc.",Added to S&P 500,2020-12-21,2,-0.12985913115622497,0.5548140874536324,False,Not significant,high
+"Tesla,_Inc.",Added to S&P 500,2020-12-21,3,-0.12178053674042241,0.5892828956934989,False,Not significant,high
+"Tesla,_Inc.",Added to S&P 500,2020-12-21,4,,,False,Negative correlation (edits decrease around event),high
+"Tesla,_Inc.",Added to S&P 500,2020-12-21,5,,,False,Negative correlation (edits decrease around event),high
+"Tesla,_Inc.",Market cap $1 trillion,2021-10-25,-5,,,False,Negative correlation (edits decrease around event),medium
+"Tesla,_Inc.",Market cap $1 trillion,2021-10-25,-4,-0.2250371993058671,0.42002580276169704,False,Not significant,medium
+"Tesla,_Inc.",Market cap $1 trillion,2021-10-25,-3,-0.20598865674965355,0.44404426934043234,False,Not significant,medium
+"Tesla,_Inc.",Market cap $1 trillion,2021-10-25,-2,-0.18996916086163287,0.46521108620663176,False,Not significant,medium
+"Tesla,_Inc.",Market cap $1 trillion,2021-10-25,-1,-0.08013602614850499,0.7519350561653457,False,Not significant,medium
+"Tesla,_Inc.",Market cap $1 trillion,2021-10-25,0,0.21163591930491518,0.38441764747216384,False,Not significant,medium
+"Tesla,_Inc.",Market cap $1 trillion,2021-10-25,1,-0.08013602614850499,0.7519350561653457,False,Not significant,medium
+"Tesla,_Inc.",Market cap $1 trillion,2021-10-25,2,-0.18996916086163287,0.46521108620663176,False,Not significant,medium
+"Tesla,_Inc.",Market cap $1 trillion,2021-10-25,3,-0.20598865674965355,0.44404426934043234,False,Not significant,medium
+"Tesla,_Inc.",Market cap $1 trillion,2021-10-25,4,-0.2250371993058671,0.42002580276169704,False,Not significant,medium
+"Tesla,_Inc.",Market cap $1 trillion,2021-10-25,5,,,False,Negative correlation (edits decrease around event),medium
+Academy_Awards,94th Oscars Slap,2022-03-27,-5,-0.17466675292187459,0.6074859863870926,False,Not significant,high
+Academy_Awards,94th Oscars Slap,2022-03-27,-4,0.026440226853043078,0.9349928666467121,False,Not significant,high
+Academy_Awards,94th Oscars Slap,2022-03-27,-3,-0.02404958170445321,0.937840094022022,False,Not significant,high
+Academy_Awards,94th Oscars Slap,2022-03-27,-2,-0.013233848890832615,0.9641860121390751,False,Not significant,high
+Academy_Awards,94th Oscars Slap,2022-03-27,-1,0.9736385295335466,1.00506088975967e-09,True,Edits spike 1 days BEFORE event (anticipation),high
+Academy_Awards,94th Oscars Slap,2022-03-27,0,-0.007610561655440773,0.9776837213042651,False,Not significant,high
+Academy_Awards,94th Oscars Slap,2022-03-27,1,0.9736385295335466,1.00506088975967e-09,True,Edits spike 1 days AFTER event (reaction),high
+Academy_Awards,94th Oscars Slap,2022-03-27,2,-0.013233848890832615,0.9641860121390751,False,Not significant,high
+Academy_Awards,94th Oscars Slap,2022-03-27,3,-0.02404958170445321,0.937840094022022,False,Not significant,high
+Academy_Awards,94th Oscars Slap,2022-03-27,4,0.026440226853043078,0.9349928666467121,False,Not significant,high
+Academy_Awards,94th Oscars Slap,2022-03-27,5,-0.17466675292187459,0.6074859863870926,False,Not significant,high
+Academy_Awards,95th Oscars,2023-03-12,-5,-0.05542412514774765,0.857281881123063,False,Not significant,medium
+Academy_Awards,95th Oscars,2023-03-12,-4,-0.12041307206978544,0.681779446301761,False,Not significant,medium
+Academy_Awards,95th Oscars,2023-03-12,-3,0.07023088883274702,0.8035837167272724,False,Not significant,medium
+Academy_Awards,95th Oscars,2023-03-12,-2,-0.04956916626172594,0.8553443493763454,False,Not significant,medium
+Academy_Awards,95th Oscars,2023-03-12,-1,0.9774162690534134,1.547384819897298e-11,True,Edits spike 1 days BEFORE event (anticipation),medium
+Academy_Awards,95th Oscars,2023-03-12,0,0.03172387164118138,0.9005543959966507,False,Not significant,medium
+Academy_Awards,95th Oscars,2023-03-12,1,0.9774162690534134,1.547384819897298e-11,True,Edits spike 1 days AFTER event (reaction),medium
+Academy_Awards,95th Oscars,2023-03-12,2,-0.04956916626172594,0.8553443493763454,False,Not significant,medium
+Academy_Awards,95th Oscars,2023-03-12,3,0.07023088883274702,0.8035837167272724,False,Not significant,medium
+Academy_Awards,95th Oscars,2023-03-12,4,-0.12041307206978544,0.681779446301761,False,Not significant,medium
+Academy_Awards,95th Oscars,2023-03-12,5,-0.05542412514774765,0.857281881123063,False,Not significant,medium

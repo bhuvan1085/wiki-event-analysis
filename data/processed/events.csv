@@ -1,9 +1,22 @@
-topic,title,event_date,category,magnitude
-2023 Turkey–Syria earthquakes,Turkey Earthquake,2023-02-06,Disaster,High
-COVID-19 pandemic,COVID-19 Pandemic,2020-03-11,Disaster,High
-2024 Indian Premier League,IPL 2024 Final,2024-05-26,Sports,Medium
-2022 FIFA World Cup Final,FIFA 2022 Final,2022-12-18,Sports,High
-2024 Indian general election,Indian Elections 2024,2024-06-04,Politics,High
-Russian invasion of Ukraine,Russia-Ukraine War,2022-02-24,Politics,High
-Chandrayaan-3,Chandrayaan-3 Launch,2023-07-14,Science,Medium
-ChatGPT,ChatGPT Launch,2022-11-30,Tech,High
+topic,event_date,event_name,severity
+COVID-19_pandemic,2020-03-11,WHO declares pandemic,high
+COVID-19_pandemic,2020-01-30,WHO declares emergency,medium
+COVID-19_pandemic,2020-12-11,First vaccine authorized,medium
+Taylor_Swift,2022-10-21,Album Midnights released,high
+Taylor_Swift,2023-03-17,Eras Tour begins,high
+Taylor_Swift,2024-02-04,Grammy win,medium
+Bitcoin,2021-04-14,Coinbase IPO,medium
+Bitcoin,2021-11-10,All-time high $69k,high
+Bitcoin,2022-11-11,FTX collapse,high
+Ukraine,2022-02-24,Russian invasion begins,high
+Ukraine,2022-09-21,Mobilization announced,medium
+Ukraine,2023-06-06,Kakhovka dam destroyed,medium
+ChatGPT,2022-11-30,Public launch,high
+ChatGPT,2023-03-14,GPT-4 released,high
+ChatGPT,2023-09-25,Multimodal features,medium
+2022_FIFA_World_Cup,2022-11-20,Tournament starts,medium
+2022_FIFA_World_Cup,2022-12-18,Argentina wins final,high
+"Tesla,_Inc.",2020-12-21,Added to S&P 500,high
+"Tesla,_Inc.",2021-10-25,Market cap $1 trillion,medium
+Academy_Awards,2022-03-27,94th Oscars Slap,high
+Academy_Awards,2023-03-12,95th Oscars,medium
