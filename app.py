@@ -13,7 +13,7 @@ st.set_page_config(
     layout="wide"
 )
 
-# ── Global CSS ────────────────────────────────────────────
+# ── Global CSS (Your beautiful dark theme) ─────────────────
 st.markdown("""
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Syne:wght@400;600;700;800&display=swap');
@@ -172,8 +172,34 @@ html, body, [class*="css"] {
     margin-top: 0.4rem;
 }
 
+/* Download button */
+.download-btn {
+    background: linear-gradient(135deg, #1e1e2e 0%, #0f0f1a 100%);
+    border: 1px solid #c084fc44;
+    border-radius: 8px;
+    padding: 0.5rem 1rem;
+    color: #c084fc;
+    font-family: 'Space Mono', monospace;
+    font-size: 0.7rem;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+.download-btn:hover {
+    border-color: #c084fc;
+    color: #e8e6f0;
+}
+
 /* Selectbox */
 [data-testid="stSelectbox"] label {
+    font-family: 'Space Mono', monospace;
+    font-size: 0.7rem;
+    color: #555;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+}
+
+/* Multiselect */
+[data-testid="stMultiSelect"] label {
     font-family: 'Space Mono', monospace;
     font-size: 0.7rem;
     color: #555;
@@ -188,12 +214,41 @@ html, body, [class*="css"] {
     overflow: hidden;
 }
 
+/* Tabs */
+.stTabs [data-baseweb="tab-list"] {
+    gap: 0.5rem;
+    background-color: #0f0f1a;
+    padding: 0.5rem;
+    border-radius: 12px;
+}
+.stTabs [data-baseweb="tab"] {
+    border-radius: 8px;
+    padding: 0.5rem 1rem;
+    font-family: 'Space Mono', monospace;
+    font-size: 0.7rem;
+    color: #666;
+}
+.stTabs [aria-selected="true"] {
+    background: linear-gradient(135deg, #c084fc20 0%, #818cf820 100%);
+    color: #c084fc;
+}
+
+/* Expander */
+.streamlit-expanderHeader {
+    background-color: #0f0f1a;
+    border: 1px solid #1e1e2e;
+    border-radius: 8px;
+    font-family: 'Space Mono', monospace;
+    font-size: 0.7rem;
+    color: #888;
+}
+
 /* Divider */
 hr { border-color: #1e1e2e; margin: 2rem 0; }
 </style>
 """, unsafe_allow_html=True)
 
-# ── Plotly theme ──────────────────────────────────────────
+# ── Plotly theme (Your dark theme) ────────────────────────
 PLOT_THEME = dict(
     paper_bgcolor='#0a0a0f',
     plot_bgcolor='#0f0f1a',
@@ -218,11 +273,11 @@ def load_data():
 
 daily_df, results_df, events_df = load_data()
 
-# ── Sidebar ───────────────────────────────────────────────
+# ── Sidebar (Your design + Compare Topics option) ─────────
 with st.sidebar:
     st.markdown('<div class="sidebar-brand">⚡ WikiPulse</div>', unsafe_allow_html=True)
     st.markdown('<div class="sidebar-sub">Edit Intelligence Dashboard</div>', unsafe_allow_html=True)
-    page = st.radio("Navigate", ["Overview", "Topic Explorer", "Findings"], label_visibility="collapsed")
+    page = st.radio("Navigate", ["Overview", "Topic Explorer", "Compare Topics", "Findings"], label_visibility="collapsed")
     st.markdown("<br>", unsafe_allow_html=True)
     st.markdown("""
     <div style='font-family: Space Mono, monospace; font-size: 0.62rem; color: #333; line-height: 1.8;'>
@@ -234,9 +289,9 @@ with st.sidebar:
 
 sig = results_df[results_df['significant'] == True]
 
-# ═══════════════════════════════════════════════════════════
-# OVERVIEW
-# ═══════════════════════════════════════════════════════════
+# ============================================================================
+# OVERVIEW (Your design)
+# ============================================================================
 if page == "Overview":
     st.markdown('<div class="page-title">Do editors see it coming?</div>', unsafe_allow_html=True)
     st.markdown('<div class="page-subtitle">WIKIPEDIA EDIT SPIKES VS REAL-WORLD EVENTS — LAG CORRELATION ANALYSIS</div>', unsafe_allow_html=True)
@@ -314,9 +369,9 @@ if page == "Overview":
         </div>
         """, unsafe_allow_html=True)
 
-# ═══════════════════════════════════════════════════════════
-# TOPIC EXPLORER
-# ═══════════════════════════════════════════════════════════
+# ============================================================================
+# TOPIC EXPLORER (Your design + CSV download)
+# ============================================================================
 elif page == "Topic Explorer":
     st.markdown('<div class="page-title">Topic Explorer</div>', unsafe_allow_html=True)
     st.markdown('<div class="page-subtitle">SELECT A TOPIC AND EVENT TO EXPLORE EDIT PATTERNS</div>', unsafe_allow_html=True)
@@ -405,6 +460,15 @@ elif page == "Topic Explorer":
             </div>
             """, unsafe_allow_html=True)
 
+            # CSV Download Button (NEW FEATURE)
+            csv_data = topic_results.to_csv(index=False).encode('utf-8')
+            st.download_button(
+                label="📥 Download correlation data (CSV)",
+                data=csv_data,
+                file_name=f"{topic}_{event_choice}_correlation.csv",
+                mime="text/csv"
+            )
+
             with st.expander("Full results table"):
                 st.dataframe(
                     topic_results[['lag_days', 'correlation', 'p_value', 'significant', 'interpretation']]
@@ -412,9 +476,73 @@ elif page == "Topic Explorer":
                     use_container_width=True
                 )
 
-# ═══════════════════════════════════════════════════════════
-# FINDINGS
-# ═══════════════════════════════════════════════════════════
+# ============================================================================
+# COMPARE TOPICS (NEW PAGE - From my Day 7)
+# ============================================================================
+elif page == "Compare Topics":
+    st.markdown('<div class="page-title">Compare Topics</div>', unsafe_allow_html=True)
+    st.markdown('<div class="page-subtitle">SIDE-BY-SIDE COMPARISON OF EDIT PATTERNS</div>', unsafe_allow_html=True)
+
+    compare_topics = st.multiselect(
+        "Select topics to compare",
+        options=sorted(daily_df['topic'].unique()),
+        default=sorted(daily_df['topic'].unique())[:3]
+    )
+
+    if len(compare_topics) > 0:
+        comparison_data = daily_df[daily_df['topic'].isin(compare_topics)]
+        
+        # Daily edit trends comparison
+        st.markdown('<div class="section-header">Daily Edit Trends</div>', unsafe_allow_html=True)
+        fig_compare = px.line(
+            comparison_data,
+            x='date',
+            y='edit_count',
+            color='topic',
+            title="",
+            labels={'edit_count': 'Number of Edits', 'date': 'Date', 'topic': 'Topic'}
+        )
+        fig_compare.update_layout(**PLOT_THEME, height=450)
+        fig_compare.update_traces(line=dict(width=2))
+        st.plotly_chart(fig_compare, use_container_width=True)
+        
+        # Box plot comparison
+        st.markdown('<div class="section-header">Edit Distribution</div>', unsafe_allow_html=True)
+        fig_box = px.box(
+            comparison_data,
+            x='topic',
+            y='edit_count',
+            color='topic',
+            title="",
+            labels={'edit_count': 'Number of Edits', 'topic': 'Topic'}
+        )
+        fig_box.update_layout(**PLOT_THEME, height=450, showlegend=False)
+        st.plotly_chart(fig_box, use_container_width=True)
+        
+        # Statistics table with download
+        st.markdown('<div class="section-header">Summary Statistics</div>', unsafe_allow_html=True)
+        stats_df = comparison_data.groupby('topic')['edit_count'].agg([
+            ('Total Edits', 'sum'),
+            ('Daily Average', 'mean'),
+            ('Peak Edits', 'max'),
+            ('Std Dev', 'std')
+        ]).round(1)
+        st.dataframe(stats_df, use_container_width=True)
+        
+        # Download comparison data
+        csv_compare = comparison_data.to_csv(index=False).encode('utf-8')
+        st.download_button(
+            label="📥 Download comparison data (CSV)",
+            data=csv_compare,
+            file_name="topic_comparison.csv",
+            mime="text/csv"
+        )
+    else:
+        st.warning("Please select at least one topic to compare")
+
+# ============================================================================
+# FINDINGS (Your design + CSV download)
+# ============================================================================
 elif page == "Findings":
     st.markdown('<div class="page-title">Key Findings</div>', unsafe_allow_html=True)
     st.markdown('<div class="page-subtitle">STRONGEST SIGNALS ACROSS ALL TOPICS AND EVENTS</div>', unsafe_allow_html=True)
@@ -426,6 +554,15 @@ elif page == "Findings":
     st.dataframe(
         top10.style.format({'correlation': '{:.4f}', 'p_value': '{:.6f}'}),
         use_container_width=True, height=320
+    )
+    
+    # Download top 10
+    csv_top10 = top10.to_csv(index=False).encode('utf-8')
+    st.download_button(
+        label="📥 Download top 10 correlations (CSV)",
+        data=csv_top10,
+        file_name="top10_correlations.csv",
+        mime="text/csv"
     )
 
     st.markdown('<div class="section-header">Correlation vs Lag</div>', unsafe_allow_html=True)
@@ -477,10 +614,18 @@ elif page == "Findings":
     col2.plotly_chart(fig7, use_container_width=True)
 
     st.markdown('<div class="section-header">All Significant Results</div>', unsafe_allow_html=True)
-    st.dataframe(
-        sig[['topic', 'event', 'lag_days', 'correlation', 'p_value', 'interpretation']]
-        .sort_values('correlation', ascending=False).reset_index(drop=True),
-        use_container_width=True
+    
+    all_sig = sig[['topic', 'event', 'lag_days', 'correlation', 'p_value', 'interpretation']]
+    all_sig_sorted = all_sig.sort_values('correlation', ascending=False).reset_index(drop=True)
+    st.dataframe(all_sig_sorted, use_container_width=True)
+    
+    # Download all results
+    csv_all = all_sig_sorted.to_csv(index=False).encode('utf-8')
+    st.download_button(
+        label="📥 Download all significant results (CSV)",
+        data=csv_all,
+        file_name="all_significant_correlations.csv",
+        mime="text/csv"
     )
 
 # ── Footer ────────────────────────────────────────────────
